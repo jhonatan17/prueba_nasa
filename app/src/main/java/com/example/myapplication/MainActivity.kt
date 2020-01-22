@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
          sharedPref = getSharedPreferences(PREF_NAME, PRIVATE_MODE)
         editor = sharedPref.edit()
       mi()
-        Toast.makeText(this,sharedPref.getString("historial", ""),Toast.LENGTH_LONG).show()
+       // Toast.makeText(this,sharedPref.getString("historial", ""),Toast.LENGTH_LONG).show()
        if(sharedPref.getString("historial", null)!=null){
         var h= JSONArray(sharedPref.getString("historial", ""))
         for(i in 0 until h.length()){
@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity() {
                     titleimg.setText(itemAtPos.get("title").toString())
                     descripcion.setText(itemAtPos.get("description").toString())
                     fecha.setText(itemAtPos.get("date_created").toString())
-                    Toast.makeText(this, "ds", Toast.LENGTH_LONG).show()
+                 //   Toast.makeText(this, "ds", Toast.LENGTH_LONG).show()
 
                 }
 
